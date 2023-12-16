@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
 import { useState } from "react";
+import Ted from "../../images/Ted.svg";
 import img1 from "../../images/1.svg";
 import img2 from "../../images/2.svg";
 import img3 from "../../images/3.svg";
@@ -16,8 +17,11 @@ import rampage from "../../images/rampage.svg";
 import geo from "../../images/geo.svg";
 import Red from "../../images/Red.svg";
 
-
 const arrImg = [img1, img2, img3];
+
+const latest = [moon, promet, joker, Ted, geo];
+
+const myList = [hours, space, away, rampage, Red];
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -28,6 +32,10 @@ export default function Home() {
       return;
     }
     setCount((prevCount) => prevCount - 1);
+  }
+
+  function newMovie() {
+    setMovie([moon, promet, rampage]);
   }
 
   function handleNext() {
@@ -43,17 +51,19 @@ export default function Home() {
       <header>
         <div className="container">
           <h1 className="anime">Movielab</h1>
-          <Link to="/search">
+          <Link to="/film">
             <button className="genre special">Movies</button>
           </Link>
-          <Link>
-            <button className="genre special">Tv Shows</button>
+          <Link to="/series">
+            <button className="genre special">Series</button>
           </Link>
           <Link to="/">
             <button className="genre">Anime</button>
           </Link>
           <div className="item">
-            <img src={arrImg[count]} alt="" />
+            <Link to="/filmpage">
+              <img src={arrImg[count]} alt="" />
+            </Link>
           </div>
           <button onClick={handlePrev} className="slider prev">
             Prev
@@ -69,30 +79,26 @@ export default function Home() {
             <h2 className="last">Last watched</h2>
             <h2 className="all">See all</h2>
           </div>
-          <div className="lastest">
-            <img src={moon} alt="" />
-            <img src={promet} alt="" />
-            <img src={joker} alt="" />
-            <img src={stranger} alt="" />
-            <img src={geo} alt="" />
-          </div>
+          <Link to="/filmpage" className="lastest">
+            {latest.map((image) => (
+              <img src={image} alt="" />
+            ))}
+          </Link>
         </div>
-        <footer>
-          <div className="container">
-            <div className="list-items">
-              <h2 className="list">My List</h2>
-              <h2 className="all">See all</h2>
-            </div>
-            <div className="my-list">
-              <img src={hours} alt="" />
-              <img src={space} alt="" />
-              <img src={away} alt="" />
-              <img src={rampage} alt="" />
-              <img src={Red} alt="" />
-            </div>
-          </div>
-        </footer>
       </main>
+      <footer className="home-footer">
+        <div className="container">
+          <div className="list-items">
+            <h2 className="list">My List</h2>
+            <h2 className="all">See all</h2>
+          </div>
+          <Link to="/filmpage" className="my-list">
+            {myList.map((image) => (
+              <img src={image} alt="" />
+            ))}
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 }

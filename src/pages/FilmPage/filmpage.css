@@ -1,0 +1,29 @@
+.filmName {
+  color: #ff3d00;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.age {
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  border-radius: 7px;
+  background: rgba(203, 200, 200, 0.3);
+}
+
+.author {
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  border-radius: 7px;
+  background: rgba(203, 200, 200, 0.3);
+}

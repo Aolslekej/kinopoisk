@@ -5,7 +5,7 @@ import {
   Routes,
 } from "react-router-dom";
 
-import { Home, Search } from "./pages";
+import { Home, Search, Film, Series, FilmPage } from "./pages";
 
 import "./App.css";
 
@@ -16,12 +16,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/film" element={<Film />} />
+          <Route path="/series" element={<Series />} />
+          <Route path="/filmpage" element={<FilmPage />} />
         </Routes>
       </main>
       <footer className="pages">
         <nav>
-          <NavLink to="/" className="for-all">Home</NavLink>
-          <NavLink to="/search" className="for-all">Search</NavLink>
+          <NavLink to="/" className="for-all">
+            Home
+          </NavLink>
+          <NavLink to="/search" className="for-all">
+            Search
+          </NavLink>
         </nav>
       </footer>
     </Router>
