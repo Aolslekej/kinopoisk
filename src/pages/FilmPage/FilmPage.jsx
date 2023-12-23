@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./filmpage.css";
 
 export default function FilmPage() {
   return (
     <div>
       <div className="container">
+        <Link to="/">
+          <button>Back</button>
+        </Link>
         <h2 className="filmName">Name</h2>
         <div className="items">
           <h3 className="age">15+</h3>
