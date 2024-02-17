@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./home.css";
+import arrow from "../../images/arrow.png";
 import { useState } from "react";
-import Ted from "../../images/Ted.svg";
-import img1 from "../../images/1.svg";
-import img2 from "../../images/2.svg";
-import img3 from "../../images/3.svg";
-import joker from "../../images/joker.svg";
-import moon from "../../images/moon.svg";
-import promet from "../../images/promet.svg";
-import stranger from "../../images/stranger.svg";
-import space from "../../images/space.svg";
-import away from "../../images/away.svg";
-import hours from "../../images/hours.svg";
-import rampage from "../../images/rampage.svg";
-import geo from "../../images/geo.svg";
-import Red from "../../images/Red.svg";
+import img1 from "../../images/1.png";
+import img2 from "../../images/2.png";
+import img3 from "../../images/3.png";
+import moon from "../../images/moon.png";
+import promet from "../../images/promet.png";
+import joker from "../../images/joker.png";
+import hours from "../../images/hours.png";
+import space from "../../images/space.png";
+import away from "../../images/away.png";
+import Ted from "../../images/Ted.png";
+import geo from "../../images/geo.png";
+import rampage from "../../images/rampage.png";
+import Red from "../../images/Red.png";
+import "./home.css";
 
 const arrImg = [img1, img2, img3];
 
@@ -33,11 +33,6 @@ export default function Home() {
     }
     setCount((prevCount) => prevCount - 1);
   }
-
-  function newMovie() {
-    setMovie([moon, promet, rampage]);
-  }
-
   function handleNext() {
     if (count === arrImg.length - 1) {
       setCount(0);
@@ -66,19 +61,16 @@ export default function Home() {
             </Link>
           </div>
           <button onClick={handlePrev} className="slider prev">
-            Prev
+            <img src={arrow} alt="" className="reverse arrow" />
           </button>
           <button onClick={handleNext} className="slider">
-            Next
+            <img src={arrow} alt="" className="arrow" />
           </button>
         </div>
       </header>
       <main>
         <div className="container">
-          <div className="items">
-            <h2 className="last">Last watched</h2>
-            <h2 className="all">See all</h2>
-          </div>
+          <h2 className="last">Last watched</h2>
           <Link to="/filmpage" className="lastest">
             {latest.map((image) => (
               <img src={image} alt="" />
@@ -88,10 +80,7 @@ export default function Home() {
       </main>
       <footer className="home-footer">
         <div className="container">
-          <div className="list-items">
-            <h2 className="list">My List</h2>
-            <h2 className="all">See all</h2>
-          </div>
+          <h2 className="list">My List</h2>
           <Link to="/filmpage" className="my-list">
             {myList.map((image) => (
               <img src={image} alt="" />

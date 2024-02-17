@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Rampage",
+    "img": "../../images/rampage.png"
+  },
+  {
+    "id": 2,
+    "title": "Lastofus",
+    "img": "../../images/lastofus.png"
+  },
+  {
+    "id": 3,
+    "title": "Joker",
+    "img":"../../images/joker.png"
+  },
+  {
+    "id": 4,
+    "title": "Ted Lasso",
+    "img":"../../images/Ted.png"
+  },
+  {
+    "id": 5,
+    "title": "Spirited away",
+    "img":"../../images/away.png"
+  },
+  {
+    "id": 6,
+    "title": "Geostorm",
+    "img":"../../images/Geo.png"
+  },
+  {
+    "id": 7,
+    "title": "Moonlight",
+    "img":"../../images/moon.png"
+  },
+  {
+    "id": 8,
+    "title": "Prometheus",
+    "img":"../../images/promet.png"
+  },
+  {
+    "id": 9,
+    "title": "Red notice",
+    "img":"../../images/Red.png"
+  },
+  {
+    "id": 10,
+    "title": "Martian",
+    "img":"../../images/space.png"
+  },
+  {
+    "id": 11,
+    "title": "You",
+    "img":"../../images/you.png"
+  }
+
+]

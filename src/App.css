@@ -14,11 +14,28 @@ body {
   margin-left: 50px;
 }
 
+.search {
+  width: 30px;
+  height: 30px;
+}
+
 .pages {
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #131313;
   border-radius: 32px 32px 0px 0px;
-  height: 75px;
+  height: 80px;
+}
+
+nav {
+  text-align: center;
+}
+
+.marg {
+  margin-right: 100px;
+}
+
+img {
+  cursor: pointer;
 }

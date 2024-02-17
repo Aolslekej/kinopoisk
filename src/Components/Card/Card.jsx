@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "./card.css";
-import img from "../../images/geo.svg";
 import { Link } from "react-router-dom";
 
 export default function Card(props) {
@@ -11,9 +10,9 @@ export default function Card(props) {
     >
       <div className="card_title">
         <Link to="/filmpage">
-          <img src={img} alt="" />
+          <img src={props.object.img} alt="" />
         </Link>
-        <h2>{props.object.name}</h2>
+        <h2>{props.object.title}</h2>
       </div>
     </div>
   );

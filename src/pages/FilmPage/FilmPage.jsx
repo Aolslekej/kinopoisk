@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cross from "../../images/cross.png";
 import "./filmpage.css";
 
 export default function FilmPage() {
   return (
-    <div>
+    <div className="page">
       <div className="container">
         <Link to="/">
-          <button>Back</button>
+          <img src={cross} alt="" className="back"/>
         </Link>
         <h2 className="filmName">Name</h2>
         <div className="items">

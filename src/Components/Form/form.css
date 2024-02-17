@@ -1,24 +1,38 @@
-input {
+.searching {
   background-color: #131313;
-  margin-left: 35%;
-  color: white;
+  margin-left: 36%;
   width: 400px;
   height: 60px;
   font-size: 16px;
   border-radius: 10px;
   padding-left: 20px;
   border: 1px solid #ff3d00;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+input {
+    background-color: #131313;
+    border: none;
+    color: white;
+    font-size: 16px;
 }
 
 input:focus{
-    border: 1px solid #ff3d00;
+    outline: none;
 }
 .buy {
-    height: 60px;
+    height: 40px;
 }
 
 .searched {
     color: #ff3d00;
     text-align: center;
     margin-top: 50px;
+}
+
+.search {
+    width: 40px;
+    margin-top: 3%;
 }
