@@ -56,7 +56,7 @@ export default function Movie() {
             <button className="genre">Anime</button>
           </Link>
           <div className="item">
-            <Link to="/filmpage">
+            <Link to="#">
               <img src={arrImg[count]} alt="" />
             </Link>
           </div>
