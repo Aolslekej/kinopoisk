@@ -1,0 +1,19 @@
+{
+    "animFilms": [
+        {
+            "id": 1,
+            "title": "Bleach",
+            "img": "../../images/1.png"
+          },
+          {
+            "id": 2,
+            "title": "Jujutsu Kaisen",
+            "img": "../../images/2.png"
+          },
+          {
+            "id": 3,
+            "title": "Solo leveling",
+            "img": "../../images/3.png"
+          }
+    ]
+}

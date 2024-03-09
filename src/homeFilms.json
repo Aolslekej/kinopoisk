@@ -1,0 +1,44 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Moonlight",
+      "img": "../../images/moon.png",
+      "director":"Barry Jenkins",
+      "age":"18+",
+      "href":"https://www.kinopoisk.ru/film/939981/?utm_referrer=www.google.com"
+    },
+    {
+      "id": 2,
+      "title": "Prometheus",
+      "img": "../../images/promet.png",
+      "director":"Ridley Scott",
+      "age":"16+",
+      "href":"https://kinogo.biz/28098-prometej.html"
+    },
+    {
+      "id": 3,
+      "title": "Joker",
+      "img": "../../images/joker.png",
+      "director":"Todd Philips",
+      "age":"18+",
+      "href":"https://kinogo.film/films/571-dzhoker.html"
+    },
+    {
+      "id": 4,
+      "title": "Ted Lasso",
+      "img": "../../images/Ted.png",
+      "director":"Jason Sudeikis",
+      "age":"18+",
+      "href":"https://kinogo.biz/39414-ted-lasso-t1.html"
+    },
+    {
+      "id": 5,
+      "title": "Geostorm",
+      "img": "../../images/Geo.png",
+      "director":"Dean Devlin",
+      "age":"16+",
+      "href":"https://kinogo.film/films/2312-geoshtorm.html"
+    }
+  ]
+}

@@ -12,47 +12,46 @@
   {
     "id": 3,
     "title": "Joker",
-    "img":"../../images/joker.png"
+    "img": "../../images/joker.png"
   },
   {
     "id": 4,
     "title": "Ted Lasso",
-    "img":"../../images/Ted.png"
+    "img": "../../images/Ted.png"
   },
   {
     "id": 5,
     "title": "Spirited away",
-    "img":"../../images/away.png"
+    "img": "../../images/away.png"
   },
   {
     "id": 6,
     "title": "Geostorm",
-    "img":"../../images/Geo.png"
+    "img": "../../images/Geo.png"
   },
   {
     "id": 7,
     "title": "Moonlight",
-    "img":"../../images/moon.png"
+    "img": "../../images/moon.png"
   },
   {
     "id": 8,
     "title": "Prometheus",
-    "img":"../../images/promet.png"
+    "img": "../../images/promet.png"
   },
   {
     "id": 9,
     "title": "Red notice",
-    "img":"../../images/Red.png"
+    "img": "../../images/Red.png"
   },
   {
     "id": 10,
     "title": "Martian",
-    "img":"../../images/space.png"
+    "img": "../../images/space.png"
   },
   {
     "id": 11,
     "title": "You",
-    "img":"../../images/you.png"
+    "img": "../../images/you.png"
   }
-
 ]

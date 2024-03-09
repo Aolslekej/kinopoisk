@@ -1,0 +1,44 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "title": "127 hours",
+      "img": "../../images/hours.png",
+      "director": "Danny Boyle",
+      "age": "18+",
+      "href": "https://kinogo.biz/29625-127-chasov.html"
+    },
+    {
+      "id": 2,
+      "title": "Martian",
+      "img": "../../images/space.png",
+      "director": "Ridley Scott",
+      "age": "16+",
+      "href": "https://kinogo.inc/films/4372-marsianin-hdtv-hdwt4-v33.html"
+    },
+    {
+      "id": 3,
+      "title": "Spirited away",
+      "img": "../../images/away.png",
+      "director": "Hayao Miyazaki",
+      "age": "6+",
+      "href": "https://kinogo.inc/anime/11412-unesennye-prizrakami-hd-v13.htmlr"
+    },
+    {
+      "id": 4,
+      "title": "Rampage",
+      "img": "../../images/rampage.png",
+      "director": "Brad Peyton",
+      "age": "16+",
+      "href": "https://kinogo.film/films/450-rempeydzh.html"
+    },
+    {
+      "id": 5,
+      "title": "Red notice",
+      "img": "../../images/Red.png",
+      "director": "Rawson Marshall",
+      "age": "12+",
+      "href": "https://kinogo.biz/53315-krasnoe-uvedomlenie-2021-hd-v2.html"
+    }
+  ]
+}

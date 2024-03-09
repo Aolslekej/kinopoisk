@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Home/home.css";
 import { useState } from "react";
+import homeFilms from "../../homeFilms.json";
+import listFilms from "../../listFilms.json";
 import arrow from "../../images/arrow.png";
 import moon from "../../images/moon.png";
 import promet from "../../images/promet.png";
@@ -69,23 +71,23 @@ export default function Movie() {
       <main>
         <div className="container">
           <h2 className="last">Last watched</h2>
-          <Link to="/filmpage" className="lastest">
-            {latest.map((image) => (
-              <img src={image} alt="" />
-            ))}
-          </Link>
-        </div>
-        <footer className="home-footer">
-          <div className="container">
-            <h2 className="list">My List</h2>
-            <Link to="/filmpage" className="my-list">
-              {myList.map((image) => (
-                <img src={image} alt="" />
-              ))}
+          {homeFilms.films.map((movie) => (
+            <Link to={`/films/${movie.id}`} className="lastest">
+                <img src={movie.img} alt="" key={movie.id}/>
             </Link>
-          </div>
-        </footer>
+          ))}
+        </div>
       </main>
+      <footer className="home-footer">
+        <div className="container">
+          <h2 className="list">My List</h2>
+          {listFilms.lists.map((movie) => (
+            <Link to={`/lists/${movie.id}`} className="my-list">
+                <img src={movie.img} alt="" key={movie.id}/>
+            </Link>
+          ))}
+        </div>
+      </footer>
     </div>
   );
 }

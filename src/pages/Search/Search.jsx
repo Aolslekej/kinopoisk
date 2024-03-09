@@ -37,9 +37,8 @@ export default function Search() {
         </div>
         <h1 className="searched">Your Searches</h1>
       </form>
-
       {addPost.map((item, index) => (
-        <Card object={item} delCard={delCard} key={index} />
+        <Card object={item} delCard={delCard} key={index}/>
       ))}
     </div>
   );

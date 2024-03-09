@@ -1,7 +1,10 @@
 .filmName {
   color: #ff3d00;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 50px;
 }
 
 .items {
@@ -10,6 +13,14 @@
   color: white;
   font-weight: 300;
   font-size: 20px;
+  margin-top: 50px;
+}
+
+a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
 }
 
 .age {
