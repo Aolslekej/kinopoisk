@@ -4,7 +4,6 @@ import arrow from "../../images/arrow.png";
 import { useState } from "react";
 import homeFilms from "../../homeFilms.json";
 import listFilms from "../../listFilms.json";
-import anime from "../../anime.json";
 import img1 from "../../images/1.png";
 import img2 from "../../images/2.png";
 import img3 from "../../images/3.png";
